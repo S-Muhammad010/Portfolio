@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    width: 100%;
+    height: 800px;
+}
+
+.nav {
+    display: flex;
+    gap: 20rem;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 11px rgba(129, 149, 149, 0.15);
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(50px);
+}
+
+.nav h2 {
+    font-size: 30px;
+}
+
+.nav h2 span {
+    color: red;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+    font-size: 23px;
+}
+
+.nav h3 {
+    border: 1px solid gray;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav h3:hover {
+    background: #fff;
+    color: #000;
+}
+
+.img {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.img p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.img h3 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.img button {
+    border: 1px solid gray;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 17px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    font-weight: 500;
+}
+
+.img :nth-child(5) {
+    background: #fff;
+    color: #000;
+}
+
+.img :nth-child(6) {
+    background: #000;
+    color: #fff;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.about h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.about1 {
+    position: absolute;
+    text-align: left;
+}
+
+.about1 p {
+    font-size: 20px;
+    
+}
+
+.about1 img {
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin: 100px;
+    border: 2px solid black;
+    filter: blur(10px);
+
+}
+
+.icon {
+    display: flex;
+    position: relative;
+    margin-top: 90px;
+    
+}
+
+
+.about1 .icon .icon1 {
+    width: 270px;
+    height: 250px;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin: 15px;
+   
+}
+
+
+
+.icon1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.icon1 i {
+    font-size: 50px;
+}
+
+
+.icon1 {
+    transition: all;
+    transition-duration: 0.5s;
+}
+.icon1:hover {
+    transform: scale(1.1);
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio p {
+    font-size: 20px;
+}
+
+.portfolio h2 {
+    font-size: 60px;
+}
+
+.portfolio img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 50px 20px;
+}
+
+.portfolio a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.4s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.portfolio  a:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.prt {
+    position: relative;
+}
+
+.prt .bx {
+    padding-left: 7px;
+}
+
+.portfolio .prt :nth-child(2) {
+    position: absolute;
+    left: 220px;
+    top: 280px;
+    
+}
+
+.portfolio .prt :nth-child(4) {
+    position: absolute;
+    left: 660px;
+    top: 280px;
+}
+.portfolio .prt :nth-child(6) {
+    position: absolute;
+    right: 380px;
+    top: 280px;
+}
+
+/* .footer {
+    text-align: center;
+} */
+
+.footer {
+    margin: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+  h4 {
+    font-weight: normal;
+    margin: 0;
+    color: #666;
+  }
+  
+  p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+
+
+
+
+
+
+
+
